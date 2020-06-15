@@ -9,7 +9,7 @@ It is a repository for an iOS app that allows to detect different road signs (pe
 In this project several techniques from production CV Mobile solutions were applied. Here is an example of how the app works:
 
 <div align="center">
-<img src="images/road_signs.gif" height="300px">
+<img src="images/road_signs.gif" height="600px">
 </div>
 
 ## Links
