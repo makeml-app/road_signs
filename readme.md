@@ -8,8 +8,8 @@
 It is a repository for an iOS app that allows to detect different road signs (pedestrian crossing, stop, traffic light and speed limits). It's written in Swift, uses Object Detection Neural Network trained using MakeML app, also uses SwiftOCR framework to distinguish different speed limit signs.
 In this project several techniques from production CV Mobile solutions were applied. Here is an example of how the app works:
 
-<div align="center" height="30%">
-<img src="images/road_signs.gif">
+<div align="center">
+<img src="images/road_signs.gif" height="30%">
 </div>
 
 ## Links
