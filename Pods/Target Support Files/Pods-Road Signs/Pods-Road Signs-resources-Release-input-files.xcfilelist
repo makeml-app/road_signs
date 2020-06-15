@@ -1,0 +1,11 @@
+${PODS_ROOT}/Target Support Files/Pods-Road Signs/Pods-Road Signs-resources.sh
+${PODS_ROOT}/GPUImage/framework/Resources/lookup.png
+${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png
+${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png
+${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png
+${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png
+${PODS_ROOT}/SwiftOCR/framework/SwiftOCR/OCR-Network
+${PODS_ROOT}/SwiftOCR/framework/SwiftOCR/Realistic Training Images/TrainingBackground_1.png
+${PODS_ROOT}/SwiftOCR/framework/SwiftOCR/Realistic Training Images/TrainingBackground_2.png
+${PODS_ROOT}/SwiftOCR/framework/SwiftOCR/Realistic Training Images/TrainingBackground_3.png
+${PODS_ROOT}/SwiftOCR/framework/SwiftOCR/Realistic Training Images/TrainingBackground_4.png

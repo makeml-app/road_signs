@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BE572DB2497668200426342 /* Model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3BE572DA2497668200426342 /* Model.mlmodel */; };
+		3BEE8436242B6405001A9AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8435242B6405001A9AF9 /* AppDelegate.swift */; };
+		3BEE843A242B6406001A9AF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE8439242B6406001A9AF9 /* ViewController.swift */; };
+		3BEE843D242B6406001A9AF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEE843B242B6406001A9AF9 /* Main.storyboard */; };
+		3BEE843F242B640D001A9AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BEE843E242B640D001A9AF9 /* Assets.xcassets */; };
+		3BEE8442242B640D001A9AF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEE8440242B640D001A9AF9 /* LaunchScreen.storyboard */; };
+		7F47D70E3C7F0586F48C19B1 /* Pods_Road_Signs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867838A917F002DED4BDF6F /* Pods_Road_Signs.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0867838A917F002DED4BDF6F /* Pods_Road_Signs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Road_Signs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BE572DA2497668200426342 /* Model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Model.mlmodel; sourceTree = "<group>"; };
+		3BEE8432242B6405001A9AF9 /* Road Signs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Road Signs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BEE8435242B6405001A9AF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BEE8439242B6406001A9AF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BEE843C242B6406001A9AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BEE843E242B640D001A9AF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BEE8441242B640D001A9AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BEE8443242B640D001A9AF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		801E8F1FFB2779E3F0078EAC /* Pods-Road Signs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Road Signs.debug.xcconfig"; path = "Target Support Files/Pods-Road Signs/Pods-Road Signs.debug.xcconfig"; sourceTree = "<group>"; };
+		F43C47904ADCE740F0EC24B1 /* Pods-Road Signs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Road Signs.release.xcconfig"; path = "Target Support Files/Pods-Road Signs/Pods-Road Signs.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BEE842F242B6405001A9AF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F47D70E3C7F0586F48C19B1 /* Pods_Road_Signs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		032DF85DBF9F3830147256FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				801E8F1FFB2779E3F0078EAC /* Pods-Road Signs.debug.xcconfig */,
+				F43C47904ADCE740F0EC24B1 /* Pods-Road Signs.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3BEE8429242B6405001A9AF9 = {
+			isa = PBXGroup;
+			children = (
+				3BEE8434242B6405001A9AF9 /* Road Signs */,
+				3BEE8433242B6405001A9AF9 /* Products */,
+				032DF85DBF9F3830147256FE /* Pods */,
+				B6631B596FC92E488842A38A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3BEE8433242B6405001A9AF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE8432242B6405001A9AF9 /* Road Signs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BEE8434242B6405001A9AF9 /* Road Signs */ = {
+			isa = PBXGroup;
+			children = (
+				3BE572DA2497668200426342 /* Model.mlmodel */,
+				3BEE8435242B6405001A9AF9 /* AppDelegate.swift */,
+				3BEE8439242B6406001A9AF9 /* ViewController.swift */,
+				3BEE843B242B6406001A9AF9 /* Main.storyboard */,
+				3BEE843E242B640D001A9AF9 /* Assets.xcassets */,
+				3BEE8440242B640D001A9AF9 /* LaunchScreen.storyboard */,
+				3BEE8443242B640D001A9AF9 /* Info.plist */,
+			);
+			path = "Road Signs";
+			sourceTree = "<group>";
+		};
+		B6631B596FC92E488842A38A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867838A917F002DED4BDF6F /* Pods_Road_Signs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BEE8431242B6405001A9AF9 /* Road Signs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BEE8446242B640D001A9AF9 /* Build configuration list for PBXNativeTarget "Road Signs" */;
+			buildPhases = (
+				CDC11AB8EDF654D27B3CCEE2 /* [CP] Check Pods Manifest.lock */,
+				3BEE842E242B6405001A9AF9 /* Sources */,
+				3BEE842F242B6405001A9AF9 /* Frameworks */,
+				3BEE8430242B6405001A9AF9 /* Resources */,
+				2829D1DA1BB1442E50EEB3E7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Road Signs";
+			productName = "Road Signs";
+			productReference = 3BEE8432242B6405001A9AF9 /* Road Signs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BEE842A242B6405001A9AF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "artyom korotkov";
+				TargetAttributes = {
+					3BEE8431242B6405001A9AF9 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3BEE842D242B6405001A9AF9 /* Build configuration list for PBXProject "Road Signs" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BEE8429242B6405001A9AF9;
+			productRefGroup = 3BEE8433242B6405001A9AF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BEE8431242B6405001A9AF9 /* Road Signs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BEE8430242B6405001A9AF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEE8442242B640D001A9AF9 /* LaunchScreen.storyboard in Resources */,
+				3BEE843F242B640D001A9AF9 /* Assets.xcassets in Resources */,
+				3BEE843D242B6406001A9AF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2829D1DA1BB1442E50EEB3E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Road Signs/Pods-Road Signs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Road Signs/Pods-Road Signs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Road Signs/Pods-Road Signs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDC11AB8EDF654D27B3CCEE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Road Signs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BEE842E242B6405001A9AF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BE572DB2497668200426342 /* Model.mlmodel in Sources */,
+				3BEE843A242B6406001A9AF9 /* ViewController.swift in Sources */,
+				3BEE8436242B6405001A9AF9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3BEE843B242B6406001A9AF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BEE843C242B6406001A9AF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BEE8440242B640D001A9AF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BEE8441242B640D001A9AF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BEE8444242B640D001A9AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BEE8445242B640D001A9AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BEE8447242B640D001A9AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 801E8F1FFB2779E3F0078EAC /* Pods-Road Signs.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZPC5P3JQ8K;
+				INFOPLIST_FILE = "Road Signs/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.korotkov.artyline.Road-Signs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BEE8448242B640D001A9AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F43C47904ADCE740F0EC24B1 /* Pods-Road Signs.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZPC5P3JQ8K;
+				INFOPLIST_FILE = "Road Signs/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.korotkov.artyline.Road-Signs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BEE842D242B6405001A9AF9 /* Build configuration list for PBXProject "Road Signs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BEE8444242B640D001A9AF9 /* Debug */,
+				3BEE8445242B640D001A9AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BEE8446242B640D001A9AF9 /* Build configuration list for PBXNativeTarget "Road Signs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BEE8447242B640D001A9AF9 /* Debug */,
+				3BEE8448242B640D001A9AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BEE842A242B6405001A9AF9 /* Project object */;
+}
