@@ -177,9 +177,17 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             
             // start the capture
             startCaptureSession()
+        } else {
+            showAlert("Supported camera not available")
         }
     }
-    
+
+    func showAlert(_ msg: String) {
+        let avc = UIAlertController(title: "Error", message: msg, preferredStyle: .alert)
+        avc.addAction(UIAlertAction(title: "Continue", style: .cancel, handler: nil))
+        self.show(avc, sender: nil)
+    }
+
     func startCaptureSession() {
         session.startRunning()
     }
