@@ -86,7 +86,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupAVCapture()
+        checkAccessToCameraThenSetupAVCapture()
         setupSubviews()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -113,7 +113,28 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     
     var videoDevice : AVCaptureDevice? = nil
-    
+
+    func checkAccessToCameraThenSetupAVCapture() {
+        switch AVCaptureDevice.authorizationStatus(for: .video) {
+            case .authorized:
+                self.setupAVCapture()
+            case .notDetermined:
+                AVCaptureDevice.requestAccess(for: .video) { granted in
+                    if granted {
+                        self.setupAVCapture()
+                    }
+                }
+            case .denied:
+                showAlert("Access to camera is denied")
+                return
+            case .restricted:
+                showAlert("Access to camera is restricted")
+                return
+        @unknown default:
+            fatalError()
+        }
+    }
+
     func setupAVCapture() {
         var deviceInput: AVCaptureDeviceInput!
         
