@@ -139,7 +139,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         var deviceInput: AVCaptureDeviceInput!
         
         // Select a video device, make an input
-        if let videoDevice = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInTelephotoCamera], mediaType: .video, position: .back).devices.first {
+        if let videoDevice = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera, .builtInTelephotoCamera], mediaType: .video, position: .back).devices.first {
             do {
                 deviceInput = try AVCaptureDeviceInput(device: videoDevice)
             } catch {
