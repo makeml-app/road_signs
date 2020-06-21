@@ -121,7 +121,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             case .notDetermined:
                 AVCaptureDevice.requestAccess(for: .video) { granted in
                     if granted {
-                        self.setupAVCapture()
+						DispatchQueue.main.async {
+							self.setupAVCapture()
+						}
                     }
                 }
             case .denied:
