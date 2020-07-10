@@ -86,7 +86,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupAVCapture()
+        checkAccessToCameraThenSetupAVCapture()
         setupSubviews()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -113,12 +113,35 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     
     var videoDevice : AVCaptureDevice? = nil
-    
+
+    func checkAccessToCameraThenSetupAVCapture() {
+        switch AVCaptureDevice.authorizationStatus(for: .video) {
+            case .authorized:
+                self.setupAVCapture()
+            case .notDetermined:
+                AVCaptureDevice.requestAccess(for: .video) { granted in
+                    if granted {
+						DispatchQueue.main.async {
+							self.setupAVCapture()
+						}
+                    }
+                }
+            case .denied:
+                showAlert("Access to camera is denied")
+                return
+            case .restricted:
+                showAlert("Access to camera is restricted")
+                return
+        @unknown default:
+            fatalError()
+        }
+    }
+
     func setupAVCapture() {
         var deviceInput: AVCaptureDeviceInput!
         
         // Select a video device, make an input
-        if let videoDevice = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInTelephotoCamera], mediaType: .video, position: .back).devices.first {
+        if let videoDevice = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera, .builtInTelephotoCamera], mediaType: .video, position: .back).devices.first {
             do {
                 deviceInput = try AVCaptureDeviceInput(device: videoDevice)
             } catch {
@@ -177,9 +200,17 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             
             // start the capture
             startCaptureSession()
+        } else {
+            showAlert("Supported camera not available")
         }
     }
-    
+
+    func showAlert(_ msg: String) {
+        let avc = UIAlertController(title: "Error", message: msg, preferredStyle: .alert)
+        avc.addAction(UIAlertAction(title: "Continue", style: .cancel, handler: nil))
+        self.show(avc, sender: nil)
+    }
+
     func startCaptureSession() {
         session.startRunning()
     }
